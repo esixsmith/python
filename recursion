@@ -1,0 +1,15 @@
+def factorial(x):
+    if x ==1:
+        return 1
+    else:
+#this slowly lowers the value of x causing it to sloly lower the multplier all the way to 1
+        return(x*factorial(x-1))
+
+num=int(input("what number would you like to facorialise"))
+print("the factorial of", num, "is", factorial(num))
+
+#recursion is:
+#a function that calls itself
+#clean+elegent
+#breaks problem down into sub tasks
+#can be heavy on memoroy
